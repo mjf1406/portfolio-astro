@@ -10,3 +10,21 @@
 
 ## Dependencies
 - [Badge Generator](https://michaelcurrin.github.io/badge-generator/#/generic)
+
+## Chaneg Log
+- 2024/1/xx
+    - updated the about me image to be me
+    - filled in teaching philosophy text
+    - added all my teaching projects
+    - updated the blog 
+    - updated webapp descriptions and how i use them
+    - added more testimonials
+    - update the footer
+- 2024/1/23
+    - added webapps and images
+    - updated hero section with my info
+    - updated about me with my text
+    - updated work experience
+    - updated education
+    - added framework for teaching philosophy
+    - updated testimonials

@@ -11,7 +11,7 @@ import Steps from '~/components/widgets/Steps.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 
 const metadata = {
-  title: 'Personal Homepage Demo',
+  title: 'Mr. Monkey',
 };
 ---
 
@@ -20,12 +20,25 @@ const metadata = {
   <Fragment slot="header">
     <Header
       links={[
-        { text: 'Home', href: '#' },
-        { text: 'About', href: '#about' },
-        { text: 'Resume', href: '#resume' },
-        { text: 'Porfolio', href: '#porfolio' },
-        { text: 'Blog', href: '#blog' },
-        { text: 'Github', href: 'https://github.com/mjf1406' },
+        { text: 'Home', href: '#', icon:'tabler:home' },
+        { text: 'About', href: '#about', icon:'tabler:address-book' },
+        { text: 'Resume', href: '#resume', icon:'tabler:file-cv' },
+        { text: 'Philosophy', href: '#teaching-philosophy', icon:'tabler:brain' },
+        { text: 'Porfolio', links: [
+          {text: 'Teaching Accomplishments', href:'#teaching-projects'},
+          {text: 'WebApps', href:'#webapps'},
+        ], icon:'tabler:presentation' },
+        { text: 'Blog', href: '#blog', icon:'tabler:article-filled-filled' },
+        { text: 'Socials', links: [
+          {text: 'GitHub', href:'https://github.com/mjf1406'}, 
+          {text: 'LinkedIn',href:'https://www.linkedin.com/in/mfitz06/'}
+        ], icon:'tabler:brand-github-filled' },
+        { text: 'WebApps', links: [
+          {text:'Class Daily', href:'https://mjf1406.github.io/class-daily/index.html'},
+          {text:'Class Timers', href:'https://mjf1406.github.io/class-timers/index.html'},
+          {text:'MagniText', href:'https://mjf1406.github.io/magni-text/index.html'},
+          {text:'Worksheet Generators', href:'https://mjf1406.github.io/worksheet-generators/index.html'},
+        ]},
       ]}
       actions={[
         {
@@ -65,52 +78,36 @@ const metadata = {
     columns={3}
     items={[
       {
-        icon: 'tabler:brand-dribbble',
+        icon: 'tabler:brand-github-filled',
         callToAction: {
           target: '_blank',
-          text: 'Dribbble',
-          href: '#',
+          text: 'GitHub',
+          href: 'https://github.com/mjf1406',
         },
       },
       {
-        icon: 'tabler:brand-behance',
+        icon: 'tabler:brand-linkedin',
         callToAction: {
           target: '_blank',
-          text: 'Behance',
-          href: '#',
-        },
-      },
-      {
-        icon: 'tabler:brand-pinterest',
-        callToAction: {
-          target: '_blank',
-          text: 'Pinterest',
-          href: '#',
+          text: 'LinkedIn',
+          href: 'https://www.linkedin.com/in/mfitz06/',
         },
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Colorful Image',
+      src: 'src/assets/images/self/personality-photo.jpg',
+      alt: 'Pumping up the crew for Sports Day!',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h3>
-      <p>
-        Welcome to my creative journey. My work is a testament to my commitment to bringing ideas to life, where each
-        pixel becomes a brushstroke in the canvas of imagination.
-      </p>
-      <br />
-      <p>
-        I find inspiration in the world around me, whether through the pages of a captivating novel, the intricate
-        details of typography, or the vibrant hues of nature during my outdoor escapades.
-      </p>
-      <br />
-      <p>If you're curious to dive deeper into my work, you can follow me:</p>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <span class="text-base">
+        I'm a teacher, and yeah, it's my calling. Hello there! My name is Michael Fitzgerald and thanks for coming to my site. I excel at using data in class and integrating technology. I have developed several websites to make my job as a teacher easier and my students' experiences more clear.
+        <br><br>
+        Everywhere I have been, I have developed new systems that were adopted by other teachers. At Better English, I created a shared materials system and revamped their onboarding for new teachers. At Avalon, I created a robust TOEFL cirriculum using Google Suite, which allowed teachers to correct essays in class as opposed to outside of class. At Maple Bear, I had my largest impact. Not only did I integrate Google Suite, but I also began developing several websites, which were integrated with great enthusiasm by the students and colleagues alike. I also had a massive impact on my colleagues due to my "teacher personality", which focuses on the below values present in my <a class="underline text-blue-500" href="#teaching-philosophy">teaching philosophy</a>.
+        <br><br>
+        I love to learn and am always learning to live and to be a better teacher. My favorite process is the iterative process! Every time I do something in the classroom, I look for ways to make it better the next time I do it.
+      </span>
     </Fragment>
   </Content>
 
@@ -122,14 +119,109 @@ const metadata = {
     items={[
       {
         title:
-          'Graphic Designer <br /> <span class="font-normal">ABC Design Studio, New York, NY</span> <br /> <span class="text-sm font-normal">2021 - Present</span>',
-        description: `Collaborate with clients to understand design requirements and objectives. <br /> Develop branding solutions, including logos, color palettes, and brand guidelines. <br /> Design marketing materials such as brochures, posters, and digital assets. <br /> Create visually appealing user interfaces for websites and applications.`,
+          `
+          5th Grade Homeroom Teacher <br /> 
+          <span class="font-normal">Young Hoon Elementary School, Seoul, South Korea</span> <br /> 
+          <span class="text-sm font-normal">March 2024 - present</span>
+          `,
+        description: `
+          • Taught writing, literacy, presentations, math, and science to 5th grade Korean students <br>
+          • Integrated bespoke webapps into the classroom <br>
+          • Tracked student progress in gradebook <br> 
+          • Identifified students with difficulties using statistical analysis of summative and formative assessments
+          `,
         icon: 'tabler:briefcase',
       },
       {
         title:
-          'Junior Graphic Designer <br /> <span class="font-normal">XYZ Creative Agency, Los Angeles, CA</span> <br /> <span class="text-sm font-normal">2018 - 2021</span>',
-        description: `Assisted senior designers in creating design concepts and visual assets. <br /> Contributed to the development of brand identities and marketing collateral. <br /> Collaborated with the marketing team to ensure consistent design across campaigns. <br /> Gained hands-on experience in various design software and tools.`,
+          `
+          4th Grade Lead Teacher <br /> 
+          <span class="font-normal">Maple Bear, Seoul, South Korea</span> <br /> 
+          <span class="text-sm font-normal">March 2023 - February 2024</span>
+          `,
+        description: `
+          • Promoted to team lead to better integrate their cirriculum <br>
+          • Promoted to team lead to revamp their science education <br>
+          • Integrated bespoke webapps into the classroom
+          `,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          `
+          ELA Teacher <br /> 
+          <span class="font-normal">Maple Bear, Seoul, South Korea</span> <br /> 
+          <span class="text-sm font-normal">March 2022 - February 2023</span>
+          `,
+        description: `
+          • Taught writing, literacy, and presentations to elementary school students <br>
+          • Integrated Google Suite into the cirriculum <br>
+          • Identified students in need of extra support using statistics <br>
+          • Keep a gradebook of students with automated reports for above analysis and parent-teacher conferences 
+          `,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          `
+          Acquisition Analyst <br /> 
+          <span class="font-normal">Dovenmuehle Mortgage, Inc., Lake Zurich, IL, USA</span> <br /> 
+          <span class="text-sm font-normal">March 2021 - Decemer 2021</span>
+          `,
+        description: `
+          • Analyzed incoming client data for accuracy in accordance with banking regulations <br>
+          • Utilized Python to increase efficiency by over 300% <br>
+          • Singled-out for oustanding performance, was given choice of what to pursue next <br>
+          • Trained colleagues on how to use Excel to increase productivity <br>
+          • Assisted in fixing Excel workbooks that other colleagues could not repair
+          `,
+        icon: 'tabler:report-analytics',
+      },
+      {
+        title:
+          `
+          Chinese-to-English Translator <br /> 
+          <span class="font-normal">Yeehe, Remote</span> <br /> 
+          <span class="text-sm font-normal">April 2018 - June 2021</span>
+          `,
+        description: `
+          • Translate Chinese video games, documents, and presentation decks into English <br>
+          • Used Google Sheets and Python to improve productivity of translation process
+          `,
+        icon: 'tabler:language',
+      },
+      {
+        title:
+          `
+          English Teacher <br /> 
+          <span class="font-normal">Avalon English, Seoul, South Korea</span> <br /> 
+          <span class="text-sm font-normal">December 2015 - June 2020</span>
+          `,
+        description: `
+          • Taught ELA, math, and science to elementary school students <br>
+          • Improved classroom engagement by turning in-class activities into games <br>
+          • Improved student performance through analysis of attendance, homework, test, and participation data <br>
+          • Identified students in need of extra support using statistics <br>
+          • Translated raw data into visualizations for monthly reporting and quarterly reporting
+          `,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Lead ESL Teacher <br /> <span class="font-normal">Better English, Beijing, China</span> <br /> <span class="text-sm font-normal">July 2014 - August 2015</span>',
+        description: `
+          • Improved productivity by at least 30% via implementing campus-wide shared material storage <br>
+          • Improved new teacher training by creating orientation and training materials
+          `,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'ESL Teacher <br /> <span class="font-normal">Better English, Beijing, China</span> <br /> <span class="text-sm font-normal">March 2015 - June 2014</span>',
+        description: `
+          • Improved student performance through analysis of attendance, homework, test, and participation data <br>
+          • Motivated students by offering fun games to play after work was completed
+          `,
         icon: 'tabler:briefcase',
       },
     ]}
@@ -143,11 +235,19 @@ const metadata = {
     title="Education"
     items={[
       {
-        title: `Master of Fine Arts in Graphic Design <br /> <span class="font-normal">New York University's School of Design</span> <br /> <span class="text-sm font-normal">2018 - 2020</span>`,
+        title: `
+        Master of Arts in Elementary Teaching – 4.0 GPA <br /> 
+        <span class="font-normal">American College of Education</span> <br /> 
+        <span class="text-sm font-normal">2022 - 2024</span>
+        `,
         icon: 'tabler:school',
       },
       {
-        title: `Bachelor of Arts in Graphic Design <br /> <span class="font-normal">New York University's School of Design</span> <br /> <span class="text-sm font-normal">2014 - 2018</span>`,
+        title: `
+        Bachelor of Arts in Economics <br /> 
+        <span class="font-normal">Carthage College</span> <br /> 
+        <span class="text-sm font-normal">2008 - 2012</span>
+        `,
         icon: 'tabler:school',
       },
     ]}
@@ -158,55 +258,278 @@ const metadata = {
 
   <Features3
     title="Skills"
-    subtitle="Discover the proficiencies that allow me to bring imagination to life through design."
+    subtitle="Discover the proficiencies that allow me to make learning engaging for every student."
     columns={3}
     defaultIcon="tabler:point-filled"
     items={[
       {
-        title: 'Graphic design',
+        title: 'Differentiated instruction',
         description: 'Proficient in crafting visually appealing designs that convey messages effectively.',
       },
       {
-        title: 'Branding and identity',
-        description: 'Skilled at developing cohesive brand identities, including logos and brand guidelines.',
-      },
-      {
-        title: 'User-centered design',
-        description: 'Experienced in creating user-friendly interfaces and optimizing user experiences.',
-      },
-      {
-        title: 'Adobe Creative Suite',
-        description: 'Skilled in using Photoshop, Illustrator, and InDesign to create and edit visual elements.',
-      },
-      {
-        title: 'Typography',
-        description: 'Adept in selecting and manipulating typefaces to enhance design aesthetics.',
-      },
-      {
-        title: 'Color theory',
-        description: 'Proficient in using color to evoke emotions and enhance visual harmony.',
-      },
-      {
-        title: 'Print and digital design',
-        description: 'Knowledgeable in designing for both print materials and digital platforms.',
-      },
-      {
-        title: 'Attention to detail',
-        description: 'Diligent in maintaining precision and quality in all design work.',
-      },
-      {
-        title: 'Adaptability',
-        description: 'Quick to adapt to new design trends, technologies, and client preferences.',
+        title: '',
+        description: '',
       },
     ]}
   />
 
+  <!-- TEACHING PHILOSOPHY -->
+
   <!-- Content Widget **************** -->
 
   <Content
-    id="porfolio"
-    title="Elevating visual narratives"
-    subtitle="Embark on a design journey that surpasses pixels, entering a realm of imagination. Explore my portfolio, where passion and creativity converge to shape enthralling visual narratives."
+    id="teaching-philosophy"
+    isReversed
+    title="The Holistic Child"
+    tagline='"No such thing as bad student, only bad teacher." —Mr. Miyagi, The Karate Kid'
+    items={[
+      {
+        title: 'Mindfullness Reason/Benefit #1',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+      {
+        title: 'Mindfullness Reason/Benefit #2',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+      {
+        title: 'Mindfullness Reason/Benefit #3',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+    ]}
+    image={{
+      src: 'src/assets/images/teaching-philosophy/mindfullness-removebg-preview.png',
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Mindfullness</h3>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+    <!-- Content Widget **************** -->
+
+    <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Compassion & Empathy Reason/Benefit #1',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+      {
+        title: 'Compassion & Empathy Reason/Benefit #2',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+      {
+        title: 'Compassion & Empathy Reason/Benefit #3',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+    ]}
+    image={{
+      src: 'src/assets/images/teaching-philosophy/compassion-removebg-preview.png',
+      alt: 'Blueprint Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Compassion & Empathy</h3>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Skills for Success #1',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+      {
+        title: 'Skills for Success #2',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+      {
+        title: 'Skills for Success #3',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+    ]}
+    image={{
+      src: 'src/assets/images/teaching-philosophy/skills-for-success-removebg-preview.png',
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Skills for Success</h3>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+    <!-- Content Widget **************** -->
+
+    <Content
+    isAfterContent
+    items={[
+      {
+        title: 'The ZPD & Comprehensible Input Reason/Benefit #1',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+      {
+        title: 'The ZPD & Comprehensible Input Reason/Benefit #2',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+      {
+        title: 'The ZPD & Comprehensible Input Reason/Benefit #3',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+    ]}
+    image={{
+      src: 'src/assets/images/teaching-philosophy/zpd-removebg-preview.png',
+      alt: 'Blueprint Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">The ZPD & Comprehensible Input</h3>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Inclusivity & Community #1',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+      {
+        title: 'Inclusivity & Community #2',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+      {
+        title: 'Inclusivity & Community #3',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+    ]}
+    image={{
+      src: 'src/assets/images/teaching-philosophy/inclusivity-removebg-preview.png',
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Inclusivity & Community</h3>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+    <!-- Content Widget **************** -->
+
+    <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Patience & Kindness Reason/Benefit #1',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+      {
+        title: 'Patience & Kindness Reason/Benefit #2',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+      {
+        title: 'Patience & Kindness Reason/Benefit #3',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+    ]}
+    image={{
+      src: 'src/assets/images/teaching-philosophy/patience-removebg-preview.png',
+      alt: 'Blueprint Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Patience & Kindness</h3>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <Content
+  isReversed
+  items={[
+    {
+      title: 'Personalized Learning #1',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    },
+    {
+      title: 'Personalized Learning #2',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    },
+    {
+      title: 'Personalized Learning #3',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    },
+  ]}
+  image={{
+    src: 'src/assets/images/teaching-philosophy/personalized-learning-removebg-preview.png',
+    alt: 'Colorful Image',
+  }}
+>
+  <Fragment slot="content">
+    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Personalized Learning</h3>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </Fragment>
+
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</Content>
+
+  <!-- PORTFOLIO: Teaching Projects -->
+
+  <Content
+    id="teaching-projects"
+    title="Innovating and iterating everywhere I go"
+    subtitle="See how I made positive change at every place I have worked."
     isReversed
     items={[
       {
@@ -317,16 +640,201 @@ const metadata = {
     </Fragment>
   </Content>
 
+
+  <!-- PORTFOLIO: WebApps -->
+
+  <Content
+    id="webapps"
+    title="Integrating Bespoke Web Apps"
+    subtitle="Explore the Web Apps I have built, why I built them and how I use them in class."
+    isReversed
+    items={[
+      {
+        title: 'Description',
+        description:
+          'Developed a comprehensive brand identity for a tech startup, Tech Innovators, specializing in disruptive innovations. The goal was to convey a modern yet approachable image that resonated with both corporate clients and tech enthusiasts.',
+      },
+      {
+        title: 'How I use it',
+        description:
+          'Led the entire branding process from concept to execution. Created a dynamic logo that symbolized innovation, selected a vibrant color palette, and I designed corporate stationery, website graphics, and social media assets.',
+      },
+    ]}
+    image={{
+      src: 'src/assets/images/webapps/class-daily.png',
+      alt: 'Tech Design Image',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'See the open source code',
+      icon: 'tabler:chevron-right',
+      href: 'https://github.com/mjf1406/class-daily',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Class Daily <br /><span class="text-2xl">Quick access to your classes' daily schedules</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Description',
+        description: `Redesigned the e-commerce website for an eco-conscious fashion brand, GreenVogue. The objective was to align the brand's online presence with its sustainable ethos and improve user experience.`,
+      },
+      {
+        title: 'How I use it',
+        description: `Conducted a thorough analysis of the brand's values and customer base to inform the design direction. Created a visually appealing interface with intuitive navigation, highlighting sustainable materials, and integrating a user-friendly shopping experience.`,
+      },
+    ]}
+    image={{
+      src: 'src/assets/images/webapps/custom-timer.png',
+      alt: 'Fashion e-commerce Image',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'See the open source code',
+      icon: 'tabler:chevron-right',
+      href: 'https://github.com/mjf1406/class-timers',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Class Timers <br /><span class="text-2xl">Quick access to simple and comlpex pre-made and user-made timers</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Description',
+        description: `Redesigned the e-commerce website for an eco-conscious fashion brand, GreenVogue. The objective was to align the brand's online presence with its sustainable ethos and improve user experience.`,
+      },
+      {
+        title: 'How I use it',
+        description: `Conducted a thorough analysis of the brand's values and customer base to inform the design direction. Created a visually appealing interface with intuitive navigation, highlighting sustainable materials, and integrating a user-friendly shopping experience.`,
+      },
+    ]}
+    image={{
+      src: 'src/assets/images/webapps/magnitext.jpg',
+      alt: 'Fashion e-commerce Image',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'See the open source code',
+      icon: 'tabler:chevron-right',
+      href: 'https://github.com/mjf1406/magni-text',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        MagniText <br /><span class="text-2xl">Easily enlarge a message on your phone for viewing from far away.</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+
+  <Content
+  isReversed
+  isAfterContent={true}
+  items={[
+    {
+      title: 'Description',
+      description: `Redesigned the e-commerce website for an eco-conscious fashion brand, GreenVogue. The objective was to align the brand's online presence with its sustainable ethos and improve user experience.`,
+    },
+    {
+      title: 'How I use it',
+      description: `Conducted a thorough analysis of the brand's values and customer base to inform the design direction. Created a visually appealing interface with intuitive navigation, highlighting sustainable materials, and integrating a user-friendly shopping experience.`,
+    },
+  ]}
+  image={{
+    src: 'src/assets/images/webapps/word-search-gen.png',
+    alt: 'Fashion e-commerce Image',
+  }}
+  callToAction={{
+    target: '_blank',
+    text: 'See the open source code',
+    icon: 'tabler:chevron-right',
+    href: 'https://github.com/mjf1406/worksheet-generators',
+  }}
+>
+  <Fragment slot="content">
+    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+      Worksheet Generators <br /><span class="text-2xl">Quickly generate variuos worksheets for your classes with some features you didn't know you needed.</span>
+    </h3>
+  </Fragment>
+
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</Content>
+
+
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
-    title="Coworker testimonials"
-    subtitle="Discover what my colleagues have to say about their experiences working with me."
+    title="Testimonials"
+    subtitle="Discover what my colleagues and students have to say about me. Ask me about the story of any!"
     testimonials={[
+      {
+        testimonial: `I want my name to be Michael because your name is Michael.`,
+        name: '2nd Grade Student',
+        job: 'Avalon English',
+        image: {
+          src: 'src/assets/icons/user-solid.svg',
+          alt: 'Anon',
+        },
+      },
+      {
+        testimonial: `You're FINALLY getting your teaching license and a master's degree? You're finally doing what you were born to do.`,
+        name: 'Lead Native-Korean English Teacher',
+        job: 'Avalon English',
+        image: {
+          src: 'src/assets/icons/user-solid.svg',
+          alt: 'Anon',
+        },
+      },
+      {
+        testimonial: `You are a born teacher.`,
+        name: 'English Teacher',
+        job: 'Avalon English',
+        image: {
+          src: 'src/assets/icons/user-solid.svg',
+          alt: 'Anon',
+        },
+      },
+      {
+        testimonial: `Teacher! Teacher! I'm so glad you're back! I've had so many different teachers here, but you! You are the best teacher I've ever had!`,
+        name: '6th Grade TOEFL Student',
+        job: 'Avalon English',
+        image: {
+          src: 'src/assets/icons/user-solid.svg',
+          alt: 'Anon',
+        },
+      },
       {
         testimonial: `Be like Mike.`,
         name: 'Head Kindergarten Teacher',
-        job: 'Maple Bear Songpa',
+        job: 'Maple Bear',
         image: {
           src: 'src/assets/icons/user-solid.svg',
           alt: 'Anon',
@@ -335,7 +843,7 @@ const metadata = {
       {
         testimonial: `Michael's patience is... it's f****** angelic.`,
         name: 'Head Kindergarten Teacher',
-        job: 'Maple Bear Songpa',
+        job: 'Maple Bear',
         image: {
           src: 'src/assets/icons/user-solid.svg',
           alt: 'Anon',
@@ -344,7 +852,7 @@ const metadata = {
       {
         testimonial: `The parents trust you 100%.`,
         name: '4th Grade Teaching Partner',
-        job: 'Maple Bear Songpa',
+        job: 'Maple Bear',
         image: {
           src: 'src/assets/icons/user-solid.svg',
           alt: 'Anon',
@@ -353,7 +861,7 @@ const metadata = {
       {
         testimonial: `I wish that my kids had a teacher like you.`,
         name: '4th Grade Teaching Partner',
-        job: 'Maple Bear Songpa',
+        job: 'Maple Bear',
         image: {
           src: 'src/assets/icons/user-solid.svg',
           alt: 'Anon',
@@ -362,7 +870,7 @@ const metadata = {
       {
         testimonial: `I think you handle it really well because you see it happen, you deal with it, then you let it go. It doesn’t affect you, the boy, or the class ever again.`,
         name: '2nd Grade Lead Teacher',
-        job: 'Maple Bear Songpa',
+        job: 'Maple Bear',
         image: {
           src: 'src/assets/icons/user-solid.svg',
           alt: 'Anon',
@@ -374,7 +882,7 @@ const metadata = {
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
-    title="Together, we make the next generation better"
+    title="Together, we can make the next generation better"
     subtitle="Ready to hire an innovative, technology-loving teacher?"
     actions={[{
       variant:"primary",
