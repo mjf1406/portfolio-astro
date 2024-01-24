@@ -652,12 +652,12 @@ const metadata = {
       {
         title: 'Description',
         description:
-          'Developed a comprehensive brand identity for a tech startup, Tech Innovators, specializing in disruptive innovations. The goal was to convey a modern yet approachable image that resonated with both corporate clients and tech enthusiasts.',
+          'A simple websie that displays in large text the schedule for any given class for a specific day.',
       },
       {
         title: 'How I use it',
         description:
-          'Led the entire branding process from concept to execution. Created a dynamic logo that symbolized innovation, selected a vibrant color palette, and I designed corporate stationery, website graphics, and social media assets.',
+          "I display this on a computer monitor that is visible to all sudents so they know what we're doing for the day. One student is assigned to be the Scheduel Manager. Whenever we finish an item, they go over and check it off. They are also in charge of switching the class via the blue dropdown.",
       },
     ]}
     image={{
@@ -688,11 +688,11 @@ const metadata = {
     items={[
       {
         title: 'Description',
-        description: `Redesigned the e-commerce website for an eco-conscious fashion brand, GreenVogue. The objective was to align the brand's online presence with its sustainable ethos and improve user experience.`,
+        description: `A simple website that displays a large clock for viewing along with buttons to quickly start timers of various lengths. Custom timers may also be created and saved. Centers rotations are supported.`,
       },
       {
         title: 'How I use it',
-        description: `Conducted a thorough analysis of the brand's values and customer base to inform the design direction. Created a visually appealing interface with intuitive navigation, highlighting sustainable materials, and integrating a user-friendly shopping experience.`,
+        description: `I use this to quickly set timers for various activities in class. This helps diverse learners immensely by 'externalizing their frontal lobe'. I also use it for centers whenever we do those. The app is great because the students quickly learn to recognize the different sounds, colors, and shapes. For example, they all know that transition time is yellow with circles. Not only this, but each timer has its own color, so students can quickly know what they should be doing just based on the background color at a quick glance.`,
       },
     ]}
     image={{
@@ -723,11 +723,11 @@ const metadata = {
     items={[
       {
         title: 'Description',
-        description: `Redesigned the e-commerce website for an eco-conscious fashion brand, GreenVogue. The objective was to align the brand's online presence with its sustainable ethos and improve user experience.`,
+        description: `A streamlined website designed to responsively maximize the font size of any input message, ensuring optimal utilization of the entire viewport. This tool is especially useful for displaying messages on a phone, enabling easy readability.`,
       },
       {
         title: 'How I use it',
-        description: `Conducted a thorough analysis of the brand's values and customer base to inform the design direction. Created a visually appealing interface with intuitive navigation, highlighting sustainable materials, and integrating a user-friendly shopping experience.`,
+        description: `I use this to show students a quick message that does not require a reply during silent work. The messages are easy to read because they are blown up to take up my phone's entire screen.`,
       },
     ]}
     image={{
@@ -752,42 +752,76 @@ const metadata = {
     </Fragment>
   </Content>
 
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Description',
+        description: `A mobile-first webapp with a suite tools related to randomly picking students in various ways. This is meant for the teacher only and is not intended to be shared with parents or students.`,
+      },
+      {
+        title: 'How I use it',
+        description: `I use this to randomly determine the line order for dismissal. The app is great for this because it ensures that every student goes first and last at least once before anyone goes first or last again. I also let the student who was last for the previous dismissal push the Sort button. Many students enthusiastically look forward to this.`,
+      },
+    ]}
+    image={{
+      src: 'src/assets/images/webapps/Random Classroom Tools.png',
+      alt: 'Fashion e-commerce Image',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'See the open source code',
+      icon: 'tabler:chevron-right',
+      href: 'https://github.com/mjf1406/various-classroom-tools',
+    }}
+    >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Random Classroom Tools <br /><span class="text-2xl">Various random-adjacent classroom tools.</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
 
   <Content
-  isReversed
-  isAfterContent={true}
-  items={[
-    {
-      title: 'Description',
-      description: `Redesigned the e-commerce website for an eco-conscious fashion brand, GreenVogue. The objective was to align the brand's online presence with its sustainable ethos and improve user experience.`,
-    },
-    {
-      title: 'How I use it',
-      description: `Conducted a thorough analysis of the brand's values and customer base to inform the design direction. Created a visually appealing interface with intuitive navigation, highlighting sustainable materials, and integrating a user-friendly shopping experience.`,
-    },
-  ]}
-  image={{
-    src: 'src/assets/images/webapps/word-search-gen.png',
-    alt: 'Fashion e-commerce Image',
-  }}
-  callToAction={{
-    target: '_blank',
-    text: 'See the open source code',
-    icon: 'tabler:chevron-right',
-    href: 'https://github.com/mjf1406/worksheet-generators',
-  }}
->
-  <Fragment slot="content">
-    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-      Worksheet Generators <br /><span class="text-2xl">Quickly generate variuos worksheets for your classes with some features you didn't know you needed.</span>
-    </h3>
-  </Fragment>
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Description',
+        description: `The webapp that holds the collection of all the printable worksheets I have needed in my classrooms. It uses modern web design principals and has features that other generators do not, such as displaying a word's direction or section on a word search, or printing a crossword with specified letters visible.`,
+      },
+      {
+        title: 'How I use it',
+        description: `I use this to generate word searches, crossword puzzles, and mazes for Ozobot that students can solve.`,
+      },
+    ]}
+    image={{
+      src: 'src/assets/images/webapps/word-search-gen.png',
+      alt: 'Fashion e-commerce Image',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'See the open source code',
+      icon: 'tabler:chevron-right',
+      href: 'https://github.com/mjf1406/worksheet-generators',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Worksheet Generators <br /><span class="text-2xl">Quickly generate variuos worksheets for your classes with some features you didn't know you needed.</span>
+      </h3>
+    </Fragment>
 
-  <Fragment slot="bg">
-    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-  </Fragment>
-</Content>
-
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
 
   <!-- Testimonials Widget *********** -->
 

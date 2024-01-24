@@ -13,13 +13,15 @@
 
 ## Chaneg Log
 - 2024/1/xx
-    - updated the about me image to be me
     - filled in teaching philosophy text
     - added all my teaching projects
     - updated the blog 
-    - updated webapp descriptions and how i use them
+    - update Random Classroom Tools image
+    - updated the footer
+- 2024/1/24
     - added more testimonials
-    - update the footer
+    - added webapp descriptions and how i use them
+    - updated the about me image to be me
 - 2024/1/23
     - added webapps and images
     - updated hero section with my info
