@@ -18,6 +18,7 @@
     - updated the blog 
     - update Random Classroom Tools image
     - updated the footer
+    - photos now show up on Netlify
 - 2024/1/24
     - added more testimonials
     - added webapp descriptions and how i use them
