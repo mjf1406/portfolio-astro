@@ -40,31 +40,36 @@ const { images = {}, id, classes = {} } = Astro.props as ImageGalleryProps;
 </div>
 
 <script>
+  import Letter1 from '../../assets/images/student-letters/letter-1.webp';
+  import Letter2 from '../../assets/images/student-letters/letter-2.webp';
+  import Letter3 from '../../assets/images/student-letters/letter-3.webp';
+  import Letter4 from '../../assets/images/student-letters/letter-4.webp';
+
     const images = [
-        {
-            "id": "letter-1",
-            "image": "src/assets/images/student-letters/letter-1.webp",
-            "width": 2376,
-            "height": 1574
-        },
-        {
-            "id": "letter-2",
-            "image": "src/assets/images/student-letters/letter-2.webp",
-            "width": 2376,
-            "height": 1574
-        },
-        {
-            "id": "letter-3",
-            "image": "src/assets/images/student-letters/letter-3.webp",
-            "width": 2376,
-            "height": 1574
-        },
-        {
-            "id": "letter-4",
-            "image": "src/assets/images/student-letters/letter-4.webp",
-            "width": 2376,
-            "height": 1574
-        }
+      {
+        "id": "letter-1",
+        "image": Letter1.src,
+        "width": 2376,
+        "height": 1574
+      },
+      {
+        "id": "letter-2",
+        "image": Letter2.src,
+        "width": 2376,
+        "height": 1574
+      },
+      {
+        "id": "letter-3",
+        "image": Letter3.src,
+        "width": 2376,
+        "height": 1574
+      },
+      {
+        "id": "letter-4",
+        "image": Letter4.src,
+        "width": 2376,
+        "height": 1574
+      },
     ];
     
   document.addEventListener('DOMContentLoaded', () => {
