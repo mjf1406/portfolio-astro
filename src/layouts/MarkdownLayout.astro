@@ -5,7 +5,8 @@ import type { MetaData } from '~/types';
 
 export interface Props {
   frontmatter: {
-    title?: string
+    title?: string,
+    author?: string,
   }
 }
 
@@ -13,6 +14,7 @@ const { frontmatter } = Astro.props;
 
 const metadata: MetaData = {
   title: frontmatter?.title,
+  author: frontmatter?.author,
 };
 ---
 

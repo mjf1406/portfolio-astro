@@ -15,9 +15,13 @@
 - 2024/1/xx
     - filled in teaching philosophy text
     - added all my teaching projects
-    - updated the blog 
     - updated the footer
+    - update hire me button, maybe a contact form?
 - 2024/1/27
+    - updated the blog header to be the same as home
+    - added author to blog posts
+    - added test blog post
+    - fixed student letter modal width being too small
     - photos now show up on Netlify
     - updated Random Classroom Tools image
     - added letters from students

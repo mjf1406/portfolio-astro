@@ -47,6 +47,7 @@ export interface Post {
 export interface MetaData {
   title?: string;
   ignoreTitleTemplate?: boolean;
+  author?: string;
 
   canonical?: string;
 
