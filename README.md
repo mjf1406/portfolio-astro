@@ -18,6 +18,8 @@
     - updated the footer
     - update hire me button, maybe a contact form?
 - 2024/1/27
+    - fixed modal height being too big [1845]
+    - redacted letter-2 names [1845]
     - updated the blog header to be the same as home
     - added author to blog posts
     - added test blog post
