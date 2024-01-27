@@ -16,9 +16,12 @@
     - filled in teaching philosophy text
     - added all my teaching projects
     - updated the blog 
-    - update Random Classroom Tools image
     - updated the footer
     - photos now show up on Netlify
+- 2024/1/27
+    - updated Random Classroom Tools image
+    - added letters from students
+    - fixed nav by removing dropdowns
 - 2024/1/24
     - added more testimonials
     - added webapp descriptions and how i use them

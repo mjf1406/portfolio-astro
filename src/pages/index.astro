@@ -10,9 +10,38 @@ import Testimonials from '~/components/widgets/Testimonials.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 
+import ImageGallery from '~/components/widgets/ImageGallery.astro';
+
 const metadata = {
   title: 'Mr. Monkey',
 };
+
+const images = [
+  {
+    "id": "letter-1",
+    "image": "src/assets/images/student-letters/letter-1.webp",
+    "width": 2376,
+    "height": 1574
+  },
+  {
+    "id": "letter-2",
+    "image": "src/assets/images/student-letters/letter-2.webp",
+    "width": 2376,
+    "height": 1574
+  },
+  {
+    "id": "letter-3",
+    "image": "src/assets/images/student-letters/letter-3.webp",
+    "width": 2376,
+    "height": 1574
+  },
+  {
+    "id": "letter-4",
+    "image": "src/assets/images/student-letters/letter-4.webp",
+    "width": 2376,
+    "height": 1574
+  },
+];
 ---
 
 <Layout metadata={metadata}>
@@ -24,21 +53,10 @@ const metadata = {
         { text: 'About', href: '#about', icon:'tabler:address-book' },
         { text: 'Resume', href: '#resume', icon:'tabler:file-cv' },
         { text: 'Philosophy', href: '#teaching-philosophy', icon:'tabler:brain' },
-        { text: 'Porfolio', links: [
-          {text: 'Teaching Accomplishments', href:'#teaching-projects'},
-          {text: 'WebApps', href:'#webapps'},
-        ], icon:'tabler:presentation' },
+        { text: 'Testimonials', href: '#testimonials', icon:'tabler:brain' },
+        { text: 'Accomplishments', href: '#teaching-projects', icon:'tabler:brain' },
+        { text: 'WebApps', href: '#webapps', icon:'tabler:article-filled-filled' },
         { text: 'Blog', href: '#blog', icon:'tabler:article-filled-filled' },
-        { text: 'Socials', links: [
-          {text: 'GitHub', href:'https://github.com/mjf1406'}, 
-          {text: 'LinkedIn',href:'https://www.linkedin.com/in/mfitz06/'}
-        ], icon:'tabler:brand-github-filled' },
-        { text: 'WebApps', links: [
-          {text:'Class Daily', href:'https://mjf1406.github.io/class-daily/index.html'},
-          {text:'Class Timers', href:'https://mjf1406.github.io/class-timers/index.html'},
-          {text:'MagniText', href:'https://mjf1406.github.io/magni-text/index.html'},
-          {text:'Worksheet Generators', href:'https://mjf1406.github.io/worksheet-generators/index.html'},
-        ]},
       ]}
       actions={[
         {
@@ -60,10 +78,13 @@ const metadata = {
     actions={[{ variant: "primary", target: '_blank', text: 'Hire me', href: '/' }]}
   >
     <Fragment slot="subtitle">
-      <span class="max-w-2xl text-2xl text-center">Elementary School Teacher, Web Developer, Programmer,<br> Translator (Mandarin → English), D&D Forever DM, Cyclist</span> <br> <br>
-      
-      Highly accomplished teacher with nearly a decade of experience teaching ESL, math, science, and language arts who has leveraged in-class games for engaging lessons, and who has utilized Python, advanced Excel techniques, and other tools to gain valuable insights into students and their behaviors all in order to better educate them.
+      <span class="max-w-2xl text-2xl text-center">
 
+      </span> 
+      <br> <br>
+      <span class="max-w-2xl text-2xl text-center">Elementary School Teacher, Web Developer, Programmer,<br> Translator (Mandarin → English), D&D Forever DM, Cyclist</span> 
+      <br> <br>
+      Highly accomplished teacher with nearly a decade of experience teaching ESL, math, science, and language arts who has leveraged in-class games for engaging lessons, and who has utilized Python, advanced Excel techniques, and other tools to gain valuable insights into students and their behaviors all in order to better educate them.
       <span class="flex flex-col items-center justify-center mt-8">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/vOCCbvM5uss?si=pjXuOR4r-rNUuYGV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </span>
@@ -95,7 +116,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'src/assets/images/self/personality-photo.jpg',
+      src: '~/assets/images/self/personality-photo.jpg',
       alt: 'Pumping up the crew for Sports Day!',
     }}
   >
@@ -300,7 +321,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'src/assets/images/teaching-philosophy/mindfullness-removebg-preview.png',
+      src: '~/assets/images/teaching-philosophy/mindfullness-removebg-preview.png',
       alt: 'Colorful Image',
     }}
   >
@@ -336,7 +357,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'src/assets/images/teaching-philosophy/compassion-removebg-preview.png',
+      src: '~/assets/images/teaching-philosophy/compassion-removebg-preview.png',
       alt: 'Blueprint Image',
     }}
   >
@@ -370,7 +391,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'src/assets/images/teaching-philosophy/skills-for-success-removebg-preview.png',
+      src: '~/assets/images/teaching-philosophy/skills-for-success-removebg-preview.png',
       alt: 'Colorful Image',
     }}
   >
@@ -406,7 +427,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'src/assets/images/teaching-philosophy/zpd-removebg-preview.png',
+      src: '~/assets/images/teaching-philosophy/zpd-removebg-preview.png',
       alt: 'Blueprint Image',
     }}
   >
@@ -440,7 +461,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'src/assets/images/teaching-philosophy/inclusivity-removebg-preview.png',
+      src: '~/assets/images/teaching-philosophy/inclusivity-removebg-preview.png',
       alt: 'Colorful Image',
     }}
   >
@@ -476,7 +497,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'src/assets/images/teaching-philosophy/patience-removebg-preview.png',
+      src: '~/assets/images/teaching-philosophy/patience-removebg-preview.png',
       alt: 'Blueprint Image',
     }}
   >
@@ -491,38 +512,131 @@ const metadata = {
   </Content>
 
   <Content
-  isReversed
-  items={[
-    {
-      title: 'Personalized Learning #1',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    },
-    {
-      title: 'Personalized Learning #2',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    },
-    {
-      title: 'Personalized Learning #3',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    },
-  ]}
-  image={{
-    src: 'src/assets/images/teaching-philosophy/personalized-learning-removebg-preview.png',
-    alt: 'Colorful Image',
-  }}
->
-  <Fragment slot="content">
-    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Personalized Learning</h3>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  </Fragment>
+    isReversed
+    items={[
+      {
+        title: 'Personalized Learning #1',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+      {
+        title: 'Personalized Learning #2',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+      {
+        title: 'Personalized Learning #3',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/teaching-philosophy/personalized-learning-removebg-preview.png',
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Personalized Learning</h3>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </Fragment>
 
-  <Fragment slot="bg">
-    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-  </Fragment>
-</Content>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Testimonials Widget *********** -->
+
+  <Testimonials
+    id="testimonials"
+    title="Testimonials"
+    subtitle="Discover what my colleagues and students have to say about me. Ask me about the story of any!"
+    testimonials={[
+      {
+        testimonial: `I want my name to be Michael because your name is Michael.`,
+        name: '2nd Grade Student',
+        job: 'Avalon English',
+        image: {
+          src: '~/assets/icons/user-solid.svg',
+          alt: 'Anon',
+        },
+      },
+      {
+        testimonial: `You're FINALLY getting your teaching license and a master's degree? You're finally doing what you were born to do.`,
+        name: 'Lead Native-Korean English Teacher',
+        job: 'Avalon English',
+        image: {
+          src: '~/assets/icons/user-solid.svg',
+          alt: 'Anon',
+        },
+      },
+      {
+        testimonial: `You are a born teacher.`,
+        name: 'English Teacher',
+        job: 'Avalon English',
+        image: {
+          src: '~/assets/icons/user-solid.svg',
+          alt: 'Anon',
+        },
+      },
+      {
+        testimonial: `Teacher! Teacher! I'm so glad you're back! I've had so many different teachers here, but you! You are the best teacher I've ever had!`,
+        name: '6th Grade TOEFL Student',
+        job: 'Avalon English',
+        image: {
+          src: '~/assets/icons/user-solid.svg',
+          alt: 'Anon',
+        },
+      },
+      {
+        testimonial: `Be like Mike.`,
+        name: 'Head Kindergarten Teacher',
+        job: 'Maple Bear',
+        image: {
+          src: '~/assets/icons/user-solid.svg',
+          alt: 'Anon',
+        },
+      },
+      {
+        testimonial: `Michael's patience is... it's f****** angelic.`,
+        name: 'Head Kindergarten Teacher',
+        job: 'Maple Bear',
+        image: {
+          src: '~/assets/icons/user-solid.svg',
+          alt: 'Anon',
+        },
+      },
+      {
+        testimonial: `The parents trust you 100%.`,
+        name: '4th Grade Teaching Partner',
+        job: 'Maple Bear',
+        image: {
+          src: '~/assets/icons/user-solid.svg',
+          alt: 'Anon',
+        },
+      },
+      {
+        testimonial: `I wish that my kids had a teacher like you.`,
+        name: '4th Grade Teaching Partner',
+        job: 'Maple Bear',
+        image: {
+          src: '~/assets/icons/user-solid.svg',
+          alt: 'Anon',
+        },
+      },
+      {
+        testimonial: `I think you handle it really well because you see it happen, you deal with it, then you let it go. It doesn’t affect you, the boy, or the class ever again.`,
+        name: '2nd Grade Lead Teacher',
+        job: 'Maple Bear',
+        image: {
+          src: '~/assets/icons/user-solid.svg',
+          alt: 'Anon',
+        },
+      },
+    ]}
+  />
+
+  <ImageGallery images={images} />
 
   <!-- PORTFOLIO: Teaching Projects -->
 
@@ -646,7 +760,7 @@ const metadata = {
   <Content
     id="webapps"
     title="Integrating Bespoke Web Apps"
-    subtitle="Explore the Web Apps I have built, why I built them and how I use them in class."
+    subtitle="Explore the Web Apps I have built, why I built them, and how I use them in class."
     isReversed
     items={[
       {
@@ -661,14 +775,14 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'src/assets/images/webapps/class-daily.png',
+      src: '~/assets/images/webapps/class-daily.png',
       alt: 'Tech Design Image',
     }}
     callToAction={{
       target: '_blank',
-      text: 'See the open source code',
+      text: 'Go to the app',
       icon: 'tabler:chevron-right',
-      href: 'https://github.com/mjf1406/class-daily',
+      href: 'https://mjf1406.github.io/class-daily/index.html',
     }}
   >
     <Fragment slot="content">
@@ -696,14 +810,14 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'src/assets/images/webapps/custom-timer.png',
+      src: '~/assets/images/webapps/custom-timer.png',
       alt: 'Fashion e-commerce Image',
     }}
     callToAction={{
       target: '_blank',
-      text: 'See the open source code',
+      text: 'Go to the app',
       icon: 'tabler:chevron-right',
-      href: 'https://github.com/mjf1406/class-timers',
+      href: 'https://mjf1406.github.io/class-timers/index.html',
     }}
   >
     <Fragment slot="content">
@@ -731,14 +845,14 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'src/assets/images/webapps/magnitext.jpg',
+      src: '~/assets/images/webapps/magnitext.jpg',
       alt: 'Fashion e-commerce Image',
     }}
     callToAction={{
       target: '_blank',
-      text: 'See the open source code',
+      text: 'Go to the app',
       icon: 'tabler:chevron-right',
-      href: 'https://github.com/mjf1406/magni-text',
+      href: 'https://mjf1406.github.io/magni-text/index.html',
     }}
   >
     <Fragment slot="content">
@@ -766,14 +880,14 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'src/assets/images/webapps/Random Classroom Tools.png',
+      src: '~/assets/images/webapps/Random Classroom Tools.png',
       alt: 'Fashion e-commerce Image',
     }}
     callToAction={{
       target: '_blank',
-      text: 'See the open source code',
+      text: 'Go to the app',
       icon: 'tabler:chevron-right',
-      href: 'https://github.com/mjf1406/various-classroom-tools',
+      href: 'https://mjf1406.github.io/various-classroom-tools/index.html',
     }}
     >
     <Fragment slot="content">
@@ -802,14 +916,14 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'src/assets/images/webapps/word-search-gen.png',
+      src: '~/assets/images/webapps/word-search-gen.png',
       alt: 'Fashion e-commerce Image',
     }}
     callToAction={{
       target: '_blank',
-      text: 'See the open source code',
+      text: 'Go to the app',
       icon: 'tabler:chevron-right',
-      href: 'https://github.com/mjf1406/worksheet-generators',
+      href: 'https://mjf1406.github.io/worksheet-generators/index.html',
     }}
   >
     <Fragment slot="content">
@@ -822,96 +936,6 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
-
-  <!-- Testimonials Widget *********** -->
-
-  <Testimonials
-    title="Testimonials"
-    subtitle="Discover what my colleagues and students have to say about me. Ask me about the story of any!"
-    testimonials={[
-      {
-        testimonial: `I want my name to be Michael because your name is Michael.`,
-        name: '2nd Grade Student',
-        job: 'Avalon English',
-        image: {
-          src: 'src/assets/icons/user-solid.svg',
-          alt: 'Anon',
-        },
-      },
-      {
-        testimonial: `You're FINALLY getting your teaching license and a master's degree? You're finally doing what you were born to do.`,
-        name: 'Lead Native-Korean English Teacher',
-        job: 'Avalon English',
-        image: {
-          src: 'src/assets/icons/user-solid.svg',
-          alt: 'Anon',
-        },
-      },
-      {
-        testimonial: `You are a born teacher.`,
-        name: 'English Teacher',
-        job: 'Avalon English',
-        image: {
-          src: 'src/assets/icons/user-solid.svg',
-          alt: 'Anon',
-        },
-      },
-      {
-        testimonial: `Teacher! Teacher! I'm so glad you're back! I've had so many different teachers here, but you! You are the best teacher I've ever had!`,
-        name: '6th Grade TOEFL Student',
-        job: 'Avalon English',
-        image: {
-          src: 'src/assets/icons/user-solid.svg',
-          alt: 'Anon',
-        },
-      },
-      {
-        testimonial: `Be like Mike.`,
-        name: 'Head Kindergarten Teacher',
-        job: 'Maple Bear',
-        image: {
-          src: 'src/assets/icons/user-solid.svg',
-          alt: 'Anon',
-        },
-      },
-      {
-        testimonial: `Michael's patience is... it's f****** angelic.`,
-        name: 'Head Kindergarten Teacher',
-        job: 'Maple Bear',
-        image: {
-          src: 'src/assets/icons/user-solid.svg',
-          alt: 'Anon',
-        },
-      },
-      {
-        testimonial: `The parents trust you 100%.`,
-        name: '4th Grade Teaching Partner',
-        job: 'Maple Bear',
-        image: {
-          src: 'src/assets/icons/user-solid.svg',
-          alt: 'Anon',
-        },
-      },
-      {
-        testimonial: `I wish that my kids had a teacher like you.`,
-        name: '4th Grade Teaching Partner',
-        job: 'Maple Bear',
-        image: {
-          src: 'src/assets/icons/user-solid.svg',
-          alt: 'Anon',
-        },
-      },
-      {
-        testimonial: `I think you handle it really well because you see it happen, you deal with it, then you let it go. It doesn’t affect you, the boy, or the class ever again.`,
-        name: '2nd Grade Lead Teacher',
-        job: 'Maple Bear',
-        image: {
-          src: 'src/assets/icons/user-solid.svg',
-          alt: 'Anon',
-        },
-      },
-    ]}
-  />
 
   <!-- CallToAction Widget *********** -->
 
