@@ -12,59 +12,6 @@
 
 - [Badge Generator](https://michaelcurrin.github.io/badge-generator/#/generic)
 
-## Blog Ideas
-
-1. the web apps I have built
-2. psychological effects in the classroom
-   - pygmalion effect \*
-   - diffusion of responsibility & ringelmann effect \*
-   - cocktail party effect
-   - contrast effect
-   - crespi effect
-   - curse of knowledge
-   - cryptomnesia
-   - generation effect
-   - self-fulfilling prophecy and golem effect \*
-   - hawthorne effect
-   - irrelevent speech effect
-   - kuleshov effect \*
-   - levels of processing \*
-   - matthew effect \*
-   - naive realism
-   - observer expectancy effect \*
-   - outgroup homogeneity effect
-   - overjustification effect \*
-   - pratfall effect \*
-   - certainty effect
-   - self-reference effect \*
-   - spacing effect \*
-   - isolation effect \*
-   - word frequency effect \*
-   - zeigarnik effect \*
-   -
-3. biases in the classroom
-   - self-serving bias
-   - framing effect & contrast effect
-   - actor-observer bias
-   - picture superiority effect
-   - outcome bias
-   - mere-exposure effect
-   - hard-easy effect
-   - baader-meinhof phenomenon (frequency illusion)
-   - halo effect
-   - anchoring bias & first impressions \*
-   - overconfidence effect
-   - serial position effect
-   - recency bias
-   - authority bias
-   - availability cascade
-   - next-in-line effect
-   - spotlight effect
-   - peak-end rule
-4. Logical fallacies in the classroom
-   - psychologist's fallacy
-   -
-
 ## Chaneg Log
 
 - 2024/1/xx
@@ -72,6 +19,8 @@
   - added all my teaching projects
   - updated the footer
   - update hire me button, maybe a contact form?
+- 2024/2/6
+  - added Artificial Intelligence in the Upper Elementary Classroom
 - 2024/1/27
   - fixed modal height being too big [1845]
   - redacted letter-2 names [1845]

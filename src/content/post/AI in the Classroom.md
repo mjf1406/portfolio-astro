@@ -1,5 +1,5 @@
 ---
-publishDate: 2024-02-04T00:00:00Z
+publishDate: 2024-02-06T00:00:00Z
 title: Artificial Intelligence in the Upper Elementary Classroom
 author: Michael Fitzgerald
 excerpt: An introduction to using artificial intelligence (AI) in upper elementary classrooms. From understanding what AI is and its ethics, to using it effectively with your students.
