@@ -2,7 +2,7 @@
 publishDate: 2024-02-02T00:00:00Z
 title: The Web Apps That I Have Built
 author: Michael Fitzgerald
-excerpt: slk3jflaskd jfladksjf ;sadkfj as;djf ;asdj fklsaj f;kadsjf;k
+excerpt: Learn about the web apps that I have built to help me be a better teacher.
 image: ~/assets/images/blog/The Web Apps That I Have Built.png
 category: Capstone
 tags:
