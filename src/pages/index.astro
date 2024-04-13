@@ -22,28 +22,28 @@ const metadata = {
 
 const images = [
   {
-    "id": "letter-1",
-    "image": Letter1.src,
-    "width": 2376,
-    "height": 1574
+    id: 'letter-1',
+    image: Letter1.src,
+    width: 2376,
+    height: 1574,
   },
   {
-    "id": "letter-2",
-    "image": Letter2.src,
-    "width": 2376,
-    "height": 1574
+    id: 'letter-2',
+    image: Letter2.src,
+    width: 2376,
+    height: 1574,
   },
   {
-    "id": "letter-3",
-    "image": Letter3.src,
-    "width": 2376,
-    "height": 1574
+    id: 'letter-3',
+    image: Letter3.src,
+    width: 2376,
+    height: 1574,
   },
   {
-    "id": "letter-4",
-    "image": Letter4.src,
-    "width": 2376,
-    "height": 1574
+    id: 'letter-4',
+    image: Letter4.src,
+    width: 2376,
+    height: 1574,
   },
 ];
 ---
@@ -52,14 +52,14 @@ const images = [
   <Fragment slot="header">
     <Header
       links={[
-        { text: 'Home', href: '#', icon:'tabler:home' },
-        { text: 'About', href: '#about', icon:'tabler:address-book' },
-        { text: 'Resume', href: '#resume', icon:'tabler:file-cv' },
-        { text: 'Philosophy', href: '#teaching-philosophy', icon:'tabler:brain' },
-        { text: 'Testimonials', href: '#testimonials', icon:'tabler:brain' },
-        { text: 'Accomplishments', href: '#teaching-projects', icon:'tabler:brain' },
-        { text: 'WebApps', href: '#webapps', icon:'tabler:article-filled-filled' },
-        { text: 'Blog', href: '#blog', icon:'tabler:article-filled-filled' },
+        { text: 'Home', href: '#', icon: 'tabler:home' },
+        { text: 'About', href: '#about', icon: 'tabler:address-book' },
+        { text: 'Resume', href: '#resume', icon: 'tabler:file-cv' },
+        { text: 'Philosophy', href: '#teaching-philosophy', icon: 'tabler:brain' },
+        { text: 'Testimonials', href: '#testimonials', icon: 'tabler:brain' },
+        { text: 'Accomplishments', href: '#teaching-projects', icon: 'tabler:brain' },
+        { text: 'WebApps', href: '#webapps', icon: 'tabler:article-filled-filled' },
+        { text: 'Blog', href: '#blog', icon: 'tabler:article-filled-filled' },
       ]}
       actions={[
         {
@@ -78,20 +78,29 @@ const images = [
     id="hero"
     title="Michael J. Fitzgerald"
     tagline='"No such thing as bad student, only bad teacher." —Mr. Miyagi, The Karate Kid'
-    actions={[{ variant: "primary", target: '_blank', text: 'Hire me', href: '/' }]}
+    actions={[{ variant: 'primary', target: '_blank', text: 'Hire me', href: '/' }]}
   >
     <Fragment slot="subtitle">
-      <span class="max-w-2xl text-2xl text-center">
-
-      </span> 
-      <span class="max-w-2xl text-2xl text-center">Elementary School Teacher, Web Developer, Programmer,<br> Translator (Mandarin → English), D&D Forever DM, Cyclist</span> 
-      <br> <br>
-      Highly accomplished teacher with nearly a decade of experience teaching ESL, math, science, and language arts who has leveraged in-class games for engaging lessons, and who has utilized Python, advanced Excel techniques, and other tools to gain valuable insights into students and their behaviors all in order to better educate them.
+      <span class="max-w-2xl text-2xl text-center"> </span>
+      <span class="max-w-2xl text-2xl text-center"
+        >Elementary School Teacher, Web Developer, Programmer,<br /> Translator (Mandarin → English), D&D Forever DM, Cyclist</span
+      >
+      <br />
+      <br />
+      Highly accomplished homeroom teacher with nearly a decade of experience teaching ESL, math, science, and language arts
+      who has leveraged in-class games for engaging lessons, and who has utilized Python, advanced Excel techniques, and
+      other tools to gain valuable insights into students and their behaviors all in order to better educate them.
       <span class="flex flex-col items-center justify-center mt-8">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/vOCCbvM5uss?si=pjXuOR4r-rNUuYGV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/vOCCbvM5uss?si=pjXuOR4r-rNUuYGV"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
       </span>
     </Fragment>
-
   </Hero>
 
   <!-- Content Widget **************** -->
@@ -125,11 +134,21 @@ const images = [
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h3>
       <span class="text-base">
-        I'm a teacher, and yeah, it's my calling. Hello there! My name is Michael Fitzgerald. I excel at using data in class and integrating technology. I have developed several websites to my and my students' in-class lives.
-        <br><br>
-        Everywhere I have been, I have developed new systems that were adopted by other teachers. At Better English, I created a shared materials system and revamped their onboarding for new teachers. At Avalon, I created a robust TOEFL cirriculum using Google Suite, massively improving efficiency. At Maple Bear, I had my largest impact. Not only did I integrate Google Suite, but I also began developing several websites, which were utilized by me and my colleagues. I also had a possitive influence on my colleagues due to my "teacher personality", which stems from my <a class="underline text-blue-500" href="#teaching-philosophy">teaching philosophy</a>.
-        <br><br>
-        I love to learn and am always learning to live and to be a better teacher. My favorite process is the iterative process! Every time I do something in the classroom, I look for ways to make it better the next time I do it.
+        I'm a teacher, and yeah, it's my calling. Hello there! My name is Michael Fitzgerald. I excel at using data in
+        class and integrating technology. I have developed several websites to improve my and my students' in-class
+        lives.
+        <br /><br />
+        Everywhere I have been, I have developed new systems that were adopted by other teachers. At Better English, I created
+        a shared materials system and revamped their onboarding for new teachers. At Avalon, I created a robust TOEFL cirriculum
+        using Google Suite, massively improving efficiency. At Maple Bear, I had my largest impact. Not only did I integrate
+        Google Suite, but I also began developing several websites, which were utilized by me and my colleagues. I also had
+        a possitive influence on my colleagues due to my "teacher personality", which stems from my <a
+          class="underline text-blue-500"
+          href="#teaching-philosophy">teaching philosophy</a
+        >.
+        <br /><br />
+        I love to learn and am always learning to live and to be a better teacher. My favorite process is the iterative process!
+        Every time I do something in the classroom, I look for ways to make it better the next time.
       </span>
     </Fragment>
   </Content>
@@ -141,13 +160,13 @@ const images = [
     title="Work experience"
     items={[
       {
-        title:
-          `
+        title: `
           5th Grade Homeroom Teacher <br /> 
           <span class="font-normal">Young Hoon Elementary School, Seoul, South Korea</span> <br /> 
           <span class="text-sm font-normal">March 2024 - present</span>
           `,
         description: `
+          • Promoted to science lead for 5th grade after 1 month on the job <br>
           • Taught writing, literacy, presentations, math, and science to 5th grade Korean students <br>
           • Integrated bespoke webapps into the classroom <br>
           • Tracked student progress in gradebook <br> 
@@ -156,22 +175,21 @@ const images = [
         icon: 'tabler:briefcase',
       },
       {
-        title:
-          `
+        title: `
           4th Grade Lead Teacher <br /> 
           <span class="font-normal">Maple Bear, Seoul, South Korea</span> <br /> 
           <span class="text-sm font-normal">March 2023 - February 2024</span>
           `,
         description: `
-          • Promoted to team lead to better integrate their cirriculum <br>
+          • Created a robust thematic cirriculum that integrated STEAM elements in every 8-week module <br>
+          • Promoted to team lead to better integrate their cirriculum across modes <br>
           • Promoted to team lead to revamp their science education <br>
-          • Integrated bespoke webapps into the classroom
+          • Integrated bespoke webapps into the classroom for the 4th grade team
           `,
         icon: 'tabler:briefcase',
       },
       {
-        title:
-          `
+        title: `
           ELA Teacher <br /> 
           <span class="font-normal">Maple Bear, Seoul, South Korea</span> <br /> 
           <span class="text-sm font-normal">March 2022 - February 2023</span>
@@ -185,8 +203,7 @@ const images = [
         icon: 'tabler:briefcase',
       },
       {
-        title:
-          `
+        title: `
           Acquisition Analyst <br /> 
           <span class="font-normal">Dovenmuehle Mortgage, Inc., Lake Zurich, IL, USA</span> <br /> 
           <span class="text-sm font-normal">March 2021 - Decemer 2021</span>
@@ -201,8 +218,7 @@ const images = [
         icon: 'tabler:report-analytics',
       },
       {
-        title:
-          `
+        title: `
           Chinese-to-English Translator <br /> 
           <span class="font-normal">Yeehe, Remote</span> <br /> 
           <span class="text-sm font-normal">April 2018 - June 2021</span>
@@ -214,8 +230,7 @@ const images = [
         icon: 'tabler:language',
       },
       {
-        title:
-          `
+        title: `
           English Teacher <br /> 
           <span class="font-normal">Avalon English, Seoul, South Korea</span> <br /> 
           <span class="text-sm font-normal">December 2015 - June 2020</span>
@@ -287,7 +302,16 @@ const images = [
     items={[
       {
         title: 'Differentiated instruction',
-        description: 'Proficient in crafting visually appealing designs that convey messages effectively.',
+        description:
+          'From extra support to enrichment, I create perosnalized learning plans and goals for each of my students.',
+      },
+      {
+        title: 'Multi-modal learning',
+        description: 'Every lesson that I create uses all modes of delivery and engagement',
+      },
+      {
+        title: 'Classroom management',
+        description: 'From classroom jobs to consistent consequences',
       },
       {
         title: '',
@@ -329,7 +353,8 @@ const images = [
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Mindfullness</h3>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+      aliqua.
     </Fragment>
 
     <Fragment slot="bg">
@@ -337,9 +362,9 @@ const images = [
     </Fragment>
   </Content>
 
-    <!-- Content Widget **************** -->
+  <!-- Content Widget **************** -->
 
-    <Content
+  <Content
     isAfterContent
     items={[
       {
@@ -365,7 +390,8 @@ const images = [
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Compassion & Empathy</h3>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+      aliqua.
     </Fragment>
 
     <Fragment slot="bg">
@@ -399,7 +425,8 @@ const images = [
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Skills for Success</h3>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+      aliqua.
     </Fragment>
 
     <Fragment slot="bg">
@@ -407,9 +434,9 @@ const images = [
     </Fragment>
   </Content>
 
-    <!-- Content Widget **************** -->
+  <!-- Content Widget **************** -->
 
-    <Content
+  <Content
     isAfterContent
     items={[
       {
@@ -435,7 +462,8 @@ const images = [
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">The ZPD & Comprehensible Input</h3>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+      aliqua.
     </Fragment>
 
     <Fragment slot="bg">
@@ -469,7 +497,8 @@ const images = [
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Inclusivity & Community</h3>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+      aliqua.
     </Fragment>
 
     <Fragment slot="bg">
@@ -477,9 +506,9 @@ const images = [
     </Fragment>
   </Content>
 
-    <!-- Content Widget **************** -->
+  <!-- Content Widget **************** -->
 
-    <Content
+  <Content
     isAfterContent
     items={[
       {
@@ -505,7 +534,8 @@ const images = [
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Patience & Kindness</h3>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+      aliqua.
     </Fragment>
 
     <Fragment slot="bg">
@@ -539,7 +569,8 @@ const images = [
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Personalized Learning</h3>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+      aliqua.
     </Fragment>
 
     <Fragment slot="bg">
@@ -630,6 +661,15 @@ const images = [
         testimonial: `I think you handle it really well because you see it happen, you deal with it, then you let it go. It doesn’t affect you, the boy, or the class ever again.`,
         name: '2nd Grade Lead Teacher',
         job: 'Maple Bear',
+        image: {
+          src: '~/assets/icons/user-solid.svg',
+          alt: 'Anon',
+        },
+      },
+      {
+        testimonial: `I have to say that what you did with the TOEFL curriculum is really impresive. It's fantastic.`,
+        name: 'Head English Teacher',
+        job: 'Avalon English',
         image: {
           src: '~/assets/icons/user-solid.svg',
           alt: 'Anon',
@@ -756,7 +796,6 @@ const images = [
     </Fragment>
   </Content>
 
-
   <!-- PORTFOLIO: WebApps -->
 
   <Content
@@ -767,8 +806,7 @@ const images = [
     items={[
       {
         title: 'Description',
-        description:
-          'A simple websie that displays in large text the schedule for any given class for a specific day.',
+        description: 'A simple websie that displays in large text the schedule for any given class for a specific day.',
       },
       {
         title: 'How I use it',
@@ -824,7 +862,8 @@ const images = [
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Class Timers <br /><span class="text-2xl">Quick access to simple and comlpex pre-made and user-made timers</span>
+        Class Timers <br /><span class="text-2xl">Quick access to simple and comlpex pre-made and user-made timers</span
+        >
       </h3>
     </Fragment>
 
@@ -891,7 +930,7 @@ const images = [
       icon: 'tabler:chevron-right',
       href: 'https://mjf1406.github.io/various-classroom-tools/index.html',
     }}
-    >
+  >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
         Random Classroom Tools <br /><span class="text-2xl">Various random-adjacent classroom tools.</span>
@@ -902,7 +941,6 @@ const images = [
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
-
 
   <Content
     isReversed
@@ -930,7 +968,9 @@ const images = [
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Worksheet Generators <br /><span class="text-2xl">Quickly generate variuos worksheets for your classes with some features you didn't know you needed.</span>
+        Worksheet Generators <br /><span class="text-2xl"
+          >Quickly generate variuos worksheets for your classes with some features you didn't know you needed.</span
+        >
       </h3>
     </Fragment>
 
@@ -944,11 +984,13 @@ const images = [
   <CallToAction
     title="Together, we can make the next generation better"
     subtitle="Ready to hire an innovative, technology-loving teacher?"
-    actions={[{
-      variant:"primary",
-      text: 'Hire me',
-      href: '/',
-    }]}
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Hire me',
+        href: '/',
+      },
+    ]}
   />
 
   <!-- BlogLatestPost Widget **************** -->

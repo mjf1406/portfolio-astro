@@ -12,15 +12,18 @@
 
 - [Badge Generator](https://michaelcurrin.github.io/badge-generator/#/generic)
 
-## Chaneg Log
+## Change Log
 
 - 2024/1/xx
   - filled in teaching philosophy text
   - added all my teaching projects
   - updated the footer
-  - update hire me button, maybe a contact form?
-- 2024/2/7
-  - added
+  - updated hire me button, maybe a contact form?
+  - fixed some typos in the blog posts
+  - rewrote some parts of the blog posts
+- 2024/4/13
+  - fixed some typos on the homepage
+  - added some skills to the homepage
 - 2024/2/6
   - added Artificial Intelligence in the Upper Elementary Classroom
 - 2024/1/27
